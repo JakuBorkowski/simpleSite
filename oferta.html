@@ -1774,18 +1774,18 @@
         const preImgBtn = slider[1];
         const nextImgBtn = slider[2];
 
-        let intevalID = intevalStart(imgList);
+        // let intevalID = intevalStart(imgList);
 
         let currentImg = 0;
         preImgBtn.addEventListener("click", () => {
           galerySliderSwapHandle(-1, imgList);
-          clearInterval(intevalID);
-          intevalID = intevalStart(imgList);
+          // clearInterval(intevalID);
+          // intevalID = intevalStart(imgList);
         });
         nextImgBtn.addEventListener("click", () => {
           galerySliderSwapHandle(1, imgList);
-          clearInterval(intevalID);
-          intevalID = intevalStart(imgList);
+          // clearInterval(intevalID);
+          // intevalID = intevalStart(imgList);
         });
       });
 
