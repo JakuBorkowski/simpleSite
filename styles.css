@@ -20,6 +20,7 @@ body {
   background-color: var(--colorMilk);
 }
 #color {
+  border-top: black solid 10vw;
   --colorLogo: #343433;
   --colorLightLogo: #f2e1c1;
   --colorMilk: #fffaf0;
@@ -297,9 +298,6 @@ main {
     font-family: "Explora", serif;
     font-size: var(--fontSizeL);
     font-weight: bold;
-    h2 {
-      /* font-weight: bolder; */
-    }
   }
   section:nth-child(3) {
     font-family: "Lora", serif;
