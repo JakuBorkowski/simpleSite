@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      main {
+        text-align: center;
+        display: flex;
+        p {
+          background-color: var(--colorMilk);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem 1rem;
+          margin: 0 0.2em;
+          border-radius: 10px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        div {
+          width: 100%;
+          img {
+            object-fit: cover;
+            max-width: 80%;
+            border-radius: 50px;
+            filter: drop-shadow(0 0 0.5rem var(--colorLogo));
+          }
+        }
+      }
+      .contactList {
+        background-color: var(--colorMilk);
+        display: flex;
+        gap: 1rem;
+        padding: 1rem 0.5em;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        li {
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          border-radius: 5rem 20px 20px 5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: var(--colorMilk);
+          padding-right: 1em;
+          a,
+          button {
+            font-family: "BenchNine", sans-serif;
+
+            width: 100%;
+            display: grid;
+            grid-template: 1fr/ 1fr 2fr;
+            color: var(--colorClicableElement);
+            * {
+              color: var(--colorContrast);
+              align-self: center;
+              justify-self: center;
+              font-size: var(--fontSizeL);
+            }
+            img {
+              object-fit: contain;
+              max-height: calc(var(--fontSizeXL) * 2);
+              border-radius: 50%;
+            }
+          }
+          .copyInfo::after {
+            content: "skopiowano";
+            position: absolute;
+            top: 50%;
+            background-color: var(--colorLogo);
+            color: var(--colorMilk);
+            font-size: var(--fontSizeL);
+            opacity: 90%;
+            padding: 5px;
+            border-radius: 5px;
+          }
+        }
+      }
+      @media (width > 1400px) {
+        main {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto auto;
+          h1 {
+            grid-area: 1/1/2/3;
+          }
+          p {
+            grid-area: 2/2/3/3;
+            font-size: var(--fontSizeM);
+          }
+          ul {
+            grid-area: 2/1/4/2;
+            border-radius: 0 50px 0 0;
+          }
+          div {
+            grid-area: 3/2/4/3;
+            img {
+              object-fit: cover;
+              max-height: 100%;
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="showNav" />
+      <label for="showNav"></label>
+      <nav>
+        <ul>
+          <li class="navElement"><a href="">O Nas</a></li>
+          <li class="navElement"><a href="./oferta.html">Oferta</a></li>
+          <li class="navElement"><a href="">Galeria</a></li>
+          <li class="navElement"><a href="./kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <img src="./logoHeaderMini.png" alt="" />
+    </header>
+    <main>
+      <h1>Kontakt</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+        voluptatem sapiente, iure cupiditate, odio iusto eum illum atque nostrum
+        fugiat ipsa unde, enim quam nihil laudantium sint! Sed, modi impedit?
+      </p>
+      <ul class="contactList">
+        <li>
+          <a target="”_blank”" href="http://m.me/fotografia.cybula">
+            <img src="./media/messengerBlack1.png" alt="" />
+            <span>MESSANGER</span></a
+          >
+        </li>
+        <li>
+          <button class="copyText">
+            <img src="./media/phoneBlack.png" alt="" />
+            <span>600 500 400</span>
+          </button>
+        </li>
+        <li>
+          <button class="copyText">
+            <img src="./media/mailBlack.png" alt="" />
+            <span>mail@mail.mail</span>
+          </button>
+        </li>
+      </ul>
+      <div>
+        <img
+          src="https://images.stockcake.com/public/6/c/d/6cdd41ec-c401-490f-bd0e-4544ef07ae07_large/steaming-coffee-mug-stockcake.jpg"
+          alt=""
+        />
+      </div>
+    </main>
+    <div id="color">
+      <header>
+        <input type="checkbox" id="showNav" />
+        <label for="showNav"></label>
+        <nav>
+          <ul>
+            <li class="navElement"><a href="">O Nas</a></li>
+            <li class="navElement"><a href="./oferta.html">Oferta</a></li>
+            <li class="navElement"><a href="">Galeria</a></li>
+            <li class="navElement"><a href="./kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+        <img src="./logoHeaderMini.png" alt="" />
+      </header>
+      <main>
+        <h1>Kontakt</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          voluptatem sapiente, iure cupiditate, odio iusto eum illum atque
+          nostrum fugiat ipsa unde, enim quam nihil laudantium sint! Sed, modi
+          impedit?
+        </p>
+        <ul class="contactList">
+          <li>
+            <a target="”_blank”" href="http://m.me/fotografia.cybula">
+              <img src="./media/messengerBlack1.png" alt="" />
+              <span>MESSANGER</span></a
+            >
+          </li>
+          <li>
+            <button class="copyText">
+              <img src="./media/phoneBlack.png" alt="" />
+              <span>600 500 400</span>
+            </button>
+          </li>
+          <li>
+            <button class="copyText">
+              <img src="./media/mailBlack.png" alt="" />
+              <span>mail@mail.mail</span>
+            </button>
+          </li>
+        </ul>
+        <div>
+          <img
+            src="https://images.stockcake.com/public/6/c/d/6cdd41ec-c401-490f-bd0e-4544ef07ae07_large/steaming-coffee-mug-stockcake.jpg"
+            alt=""
+          />
+        </div>
+      </main>
+    </div>
+    <script>
+      const copyTextButton = document.querySelectorAll(".copyText");
+
+      copyTextButton.forEach((button) => {
+        button.addEventListener("click", () => {
+          inpt = document.createElement("input");
+          inpt.value = button.innerText;
+          document.body.appendChild(inpt);
+          inpt.select();
+          document.execCommand("copy");
+          document.body.removeChild(inpt);
+          button.classList.add("copyInfo");
+          setTimeout(() => {
+            button.classList.remove("copyInfo");
+          }, 1000);
+        });
+      });
+    </script>
+  </body>
+</html>
