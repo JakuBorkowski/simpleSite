@@ -9,7 +9,9 @@
       main {
         text-align: center;
         display: flex;
-        p {
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        h2 {
           background-color: var(--colorMilk);
           display: flex;
           align-items: center;
@@ -41,6 +43,7 @@
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
           rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         li {
+          position: relative;
           box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
             rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
           border-radius: 5rem 20px 20px 5rem;
@@ -52,7 +55,6 @@
           a,
           button {
             font-family: "BenchNine", sans-serif;
-
             width: 100%;
             display: grid;
             grid-template: 1fr/ 1fr 2fr;
@@ -64,21 +66,24 @@
               font-size: var(--fontSizeL);
             }
             img {
+              justify-self: start;
               object-fit: contain;
-              max-height: calc(var(--fontSizeXL) * 2);
+              max-height: calc(var(--fontSizeXL));
               border-radius: 50%;
             }
           }
           .copyInfo::after {
             content: "skopiowano";
             position: absolute;
-            top: 50%;
+            top: 100%;
             background-color: var(--colorLogo);
             color: var(--colorMilk);
             font-size: var(--fontSizeL);
-            opacity: 90%;
+            opacity: 60%;
             padding: 5px;
-            border-radius: 5px;
+            padding: 0.1rem 2em;
+            border-radius: 100px;
+            z-index: 10;
           }
         }
       }
@@ -90,7 +95,7 @@
           h1 {
             grid-area: 1/1/2/3;
           }
-          p {
+          h2 {
             grid-area: 2/2/3/3;
             font-size: var(--fontSizeM);
           }
@@ -115,7 +120,7 @@
       <label for="showNav"></label>
       <nav>
         <ul>
-          <li class="navElement"><a href="">O Nas</a></li>
+          <li class="navElement"><a href="index.html">O Nas</a></li>
           <li class="navElement"><a href="./oferta.html">Oferta</a></li>
           <li class="navElement"><a href="">Galeria</a></li>
           <li class="navElement"><a href="./kontakt.html">Kontakt</a></li>
@@ -125,11 +130,11 @@
     </header>
     <main>
       <h1>Kontakt</h1>
-      <p>
+      <h2>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
         voluptatem sapiente, iure cupiditate, odio iusto eum illum atque nostrum
         fugiat ipsa unde, enim quam nihil laudantium sint! Sed, modi impedit?
-      </p>
+      </h2>
       <ul class="contactList">
         <li>
           <a target="”_blank”" href="http://m.me/fotografia.cybula">
@@ -153,60 +158,10 @@
       <div>
         <img
           src="https://images.stockcake.com/public/6/c/d/6cdd41ec-c401-490f-bd0e-4544ef07ae07_large/steaming-coffee-mug-stockcake.jpg"
-          alt=""
+          alt="OPIS"
         />
       </div>
     </main>
-    <div id="color">
-      <header>
-        <input type="checkbox" id="showNav" />
-        <label for="showNav"></label>
-        <nav>
-          <ul>
-            <li class="navElement"><a href="">O Nas</a></li>
-            <li class="navElement"><a href="./oferta.html">Oferta</a></li>
-            <li class="navElement"><a href="">Galeria</a></li>
-            <li class="navElement"><a href="./kontakt.html">Kontakt</a></li>
-          </ul>
-        </nav>
-        <img src="./logoHeaderMini.png" alt="" />
-      </header>
-      <main>
-        <h1>Kontakt</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-          voluptatem sapiente, iure cupiditate, odio iusto eum illum atque
-          nostrum fugiat ipsa unde, enim quam nihil laudantium sint! Sed, modi
-          impedit?
-        </p>
-        <ul class="contactList">
-          <li>
-            <a target="”_blank”" href="http://m.me/fotografia.cybula">
-              <img src="./media/messengerBlack1.png" alt="" />
-              <span>MESSANGER</span></a
-            >
-          </li>
-          <li>
-            <button class="copyText">
-              <img src="./media/phoneBlack.png" alt="" />
-              <span>600 500 400</span>
-            </button>
-          </li>
-          <li>
-            <button class="copyText">
-              <img src="./media/mailBlack.png" alt="" />
-              <span>mail@mail.mail</span>
-            </button>
-          </li>
-        </ul>
-        <div>
-          <img
-            src="https://images.stockcake.com/public/6/c/d/6cdd41ec-c401-490f-bd0e-4544ef07ae07_large/steaming-coffee-mug-stockcake.jpg"
-            alt=""
-          />
-        </div>
-      </main>
-    </div>
     <script>
       const copyTextButton = document.querySelectorAll(".copyText");
 

@@ -1,12 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OFERTA</title>
-    <style></style>
     <link rel="stylesheet" href="./styles.css" />
+
+    <style>
+      main {
+        padding-bottom: 2rem;
+        text-align: center;
+        display: flex;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        div {
+          max-width: var(--sliderWidth);
+          align-self: center;
+          justify-self: center;
+          position: relative;
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          .logo {
+            max-width: 100%;
+            max-height: 30%;
+            position: absolute;
+            filter: drop-shadow(0 0 1px var(--colorMilk));
+            align-self: end;
+            background-color: #f5ede288;
+          }
+          img {
+            align-self: center;
+            justify-self: center;
+            object-fit: contain;
+            width: 100%;
+            border-radius: 50px;
+            filter: drop-shadow(0 0 0.5rem var(--colorLogo));
+          }
+        }
+        h2 {
+          background-color: var(--colorLogo);
+          align-self: center;
+          justify-self: center;
+          padding: var(--fontSizeL);
+
+          color: var(--colorMilk);
+          font-size: var(--fontSizeL);
+          border-radius: 5px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        }
+        article {
+          max-width: var(--sliderWidth);
+          border-radius: 10px;
+          font-size: var(--fontSizeM);
+          align-self: center;
+          justify-self: center;
+          background-color: var(--colorMilk);
+          text-align: center;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+            rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          padding: 0.3rem 0.5em;
+          p {
+            padding: 0.3rem 0.5em;
+          }
+        }
+      }
+      @media (width > 1400px) {
+        main {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto 1fr 2fr;
+          h1 {
+            grid-area: 1/1/2/3;
+          }
+          h2 {
+            grid-area: 2/2/3/3;
+          }
+          article {
+            grid-area: 3/2/4/3;
+          }
+          div {
+            grid-area: 2/1/4/2;
+          }
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -14,13 +94,45 @@
       <label for="showNav"></label>
       <nav>
         <ul>
-          <li class="navElement"><a href="">O Nas</a></li>
-          <li class="navElement"><a href="">Oferta</a></li>
+          <li class="navElement"><a href="index.html">O Nas</a></li>
+          <li class="navElement"><a href="./oferta.html">Oferta</a></li>
           <li class="navElement"><a href="">Galeria</a></li>
           <li class="navElement"><a href="./kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
       <img src="./logoHeaderMini.png" alt="" />
     </header>
+    <main>
+      <h1>O Nas</h1>
+      <div>
+        <img
+          src="./media/442422970_963734339088800_3617097540540212778_n.jpg"
+          alt=""
+        />
+        <img class="logo" src="./media/LOGOAbout.png" alt="" />
+      </div>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+
+      <article>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+          laboriosam eligendi soluta consequatur omnis pariatur quia velit
+          praesentium voluptatem temporibus fugit, quibusdam ducimus, minima
+          rem, in illo mollitia voluptate ut?
+        </p>
+        <p>
+          Incidunt quis fugit nostrum ut quam praesentium laudantium
+          exercitationem officia soluta omnis quas a, eum, labore facilis
+          quaerat. Consequuntur esse nostrum saepe assumenda aliquam
+          perspiciatis doloribus nam excepturi ipsam repellat.
+        </p>
+        <p>
+          Dolor, incidunt aut! Omnis excepturi dolorem harum deserunt, ducimus
+          possimus adipisci. Laborum ex magnam, temporibus autem dolores
+          quisquam labore totam, voluptas fugit earum numquam illo ipsum
+          nostrum, dolorum sequi fugiat?
+        </p>
+      </article>
+    </main>
   </body>
 </html>
