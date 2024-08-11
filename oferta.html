@@ -1762,49 +1762,46 @@
     <script>
       const sliders = document.querySelectorAll(".slider");
 
-      let currentImg = 0;
-      let timeout;
-      const intevalStart = (imgList) =>
-        setInterval(() => {
-          galerySliderSwapHandle(1, imgList);
-        }, 4000 + Math.random() * 1000);
       sliders.forEach((slider) => {
         slider = [...slider.children];
         const imgList = slider[0];
         const preImgBtn = slider[1];
         const nextImgBtn = slider[2];
 
-        // let intevalID = intevalStart(imgList);
-
         let currentImg = 0;
+        const intevalStart = (imgList) =>
+          setInterval(() => {
+            galerySliderSwapHandle(1, imgList);
+          }, 4000 + Math.random() * 1000);
+        let intevalID = intevalStart(imgList);
+
+        const galerySliderSwapHandle = (value, imgList) => {
+          const imgListChildrenPopulation = imgList.children.length;
+          if (
+            currentImg + value >= 0 &&
+            currentImg + value < imgListChildrenPopulation
+          ) {
+            currentImg = currentImg + value;
+          } else if (currentImg + value >= imgListChildrenPopulation) {
+            currentImg = 0;
+          } else if (currentImg + value < 0) {
+            currentImg = imgListChildrenPopulation - 1;
+          }
+          imgList.style.transform = `translateX(-${
+            currentImg * (100 / imgListChildrenPopulation)
+          }%`;
+        };
         preImgBtn.addEventListener("click", () => {
           galerySliderSwapHandle(-1, imgList);
-          // clearInterval(intevalID);
-          // intevalID = intevalStart(imgList);
+          clearInterval(intevalID);
+          intevalID = intevalStart(imgList);
         });
         nextImgBtn.addEventListener("click", () => {
           galerySliderSwapHandle(1, imgList);
-          // clearInterval(intevalID);
-          // intevalID = intevalStart(imgList);
+          clearInterval(intevalID);
+          intevalID = intevalStart(imgList);
         });
       });
-
-      const galerySliderSwapHandle = (value, imgList) => {
-        const imgListChildrenPopulation = imgList.children.length;
-        if (
-          currentImg + value >= 0 &&
-          currentImg + value < imgListChildrenPopulation
-        ) {
-          currentImg = currentImg + value;
-        } else if (currentImg + value >= imgListChildrenPopulation) {
-          currentImg = 0;
-        } else if (currentImg + value < 0) {
-          currentImg = imgListChildrenPopulation - 1;
-        }
-        imgList.style.transform = `translateX(-${
-          currentImg * (100 / imgListChildrenPopulation)
-        }%`;
-      };
     </script>
   </body>
 </html>
