@@ -190,7 +190,7 @@ section {
         }
       }
       nav > ul {
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         li {
           padding: 0.5rem 0.5em;
         }
@@ -219,7 +219,7 @@ section {
         transition: grid-template-rows 0.1s;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 0fr);
+        grid-template-rows: repeat(5, 0fr);
         li {
           height: 100%;
 
