@@ -87,6 +87,22 @@
           font-weight: bold;
         }
       }
+      footer {
+        ul {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+          grid-auto-rows: 1fr;
+          li {
+            width: 100%;
+            a,
+            button > * {
+              width: 100%;
+              background-color: var(--colorLogo);
+              color: var(--colorMilk);
+            }
+          }
+        }
+      }
       @media (width > 1400px) {
         main {
           width: 1400px;
