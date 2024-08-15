@@ -56,22 +56,21 @@
           padding-right: 1em;
           a,
           button {
-            font-family: "BenchNine", sans-serif;
             width: 100%;
             display: grid;
-            grid-template: 1fr / calc(var(--fontSizeM) * 1.5) 1fr;
+            grid-template: 1fr / auto 1fr;
             gap: 2em;
             color: var(--colorClicableElement);
             * {
               color: var(--colorContrast);
               align-self: center;
               justify-self: center;
-              font-size: var(--fontSizeL);
+              font-size: var(--fontSizeM);
             }
             img {
               justify-self: start;
               object-fit: contain;
-              max-height: var(--fontSizeXL);
+              max-height: var(--fontSizeL);
               border-radius: 50%;
             }
           }
@@ -102,9 +101,20 @@
             grid-area: 2/2/3/3;
             font-size: var(--fontSizeS);
           }
-          ul {
+          .contactList {
             grid-area: 2/1/4/2;
             border-radius: 0 50px 0 0;
+            li {
+              button,
+              a {
+                * {
+                  font-size: var(--fontSizeL);
+                }
+                img {
+                  max-height: var(--fontSizeXL);
+                }
+              }
+            }
           }
           div {
             grid-area: 3/2/4/3;
