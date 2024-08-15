@@ -9,6 +9,7 @@
       main {
         text-align: center;
         display: flex;
+        gap: 1.5rem 1em;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
           rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
         h2 {
@@ -16,6 +17,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          font-size: 1.4rem;
           padding: 1rem 1rem;
           margin: 0 0.2em;
           border-radius: 10px;
@@ -57,7 +59,8 @@
             font-family: "BenchNine", sans-serif;
             width: 100%;
             display: grid;
-            grid-template: 1fr/ 1fr 2fr;
+            grid-template: 1fr / calc(var(--fontSizeM) * 1.5) 1fr;
+            gap: 2em;
             color: var(--colorClicableElement);
             * {
               color: var(--colorContrast);
@@ -68,7 +71,7 @@
             img {
               justify-self: start;
               object-fit: contain;
-              max-height: calc(var(--fontSizeXL));
+              max-height: var(--fontSizeXL);
               border-radius: 50%;
             }
           }
@@ -78,7 +81,7 @@
             top: 100%;
             background-color: var(--colorLogo);
             color: var(--colorMilk);
-            font-size: var(--fontSizeL);
+            font-size: var(--fontSizeS);
             opacity: 60%;
             padding: 5px;
             padding: 0.1rem 2em;
@@ -97,7 +100,7 @@
           }
           h2 {
             grid-area: 2/2/3/3;
-            font-size: var(--fontSizeM);
+            font-size: var(--fontSizeS);
           }
           ul {
             grid-area: 2/1/4/2;
@@ -147,7 +150,7 @@
         <li>
           <a target="”_blank”" href="http://m.me/fotografia.cybula">
             <img src="./media/messengerBlack1.png" alt="" />
-            <span>MESSANGER</span></a
+            <span>Messenger</span></a
           >
         </li>
         <li>
@@ -162,6 +165,24 @@
             <span>mail@mail.mail</span>
           </button>
         </li>
+        <li>
+          <a
+            target="”_blank”"
+            href="https://www.facebook.com/fotografia.cybula"
+          >
+            <img src="./media/facebookBlack1.png" alt="" />
+            <span>Facebook</span></a
+          >
+        </li>
+        <li>
+          <a
+            target="”_blank”"
+            href="https://www.facebook.com/fotografia.cybula"
+          >
+            <img src="./media/instagramBlack.png" alt="" />
+            <span>Instagram</span></a
+          >
+        </li>
       </ul>
       <div>
         <img
@@ -170,6 +191,29 @@
         />
       </div>
     </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="index.html">O Nas</a>
+        </li>
+        <li>
+          <a href="./oferta.html">Oferta</a>
+        </li>
+
+        <li>
+          <a href="./kontakt.html">Kontakt</a>
+        </li>
+
+        <li>
+          <a href=""><img src="./media/facebookBlack1.png" alt="" />Facebook</a>
+        </li>
+        <li>
+          <a href=""
+            ><img src="./media/instagramBlack.png" alt="" />Instagram</a
+          >
+        </li>
+      </ul>
+    </footer>
     <script>
       const copyTextButton = document.querySelectorAll(".copyText");
 
