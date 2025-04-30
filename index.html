@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>O NAS</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./media/fav2.png" type="image/x-icon" />
 
     <style>
       main {
+        min-height: calc(100vh - 9.2rem);
         padding-bottom: 2rem;
         text-align: center;
         display: flex;
         gap: 0.5rem 1em;
         div {
           max-width: var(--sliderWidth);
+          min-height: 40%;
           align-self: center;
           justify-self: center;
           position: relative;
           display: grid;
           align-items: center;
           justify-content: center;
-
           img {
             align-self: center;
             justify-self: center;
@@ -29,7 +31,6 @@
             width: 100%;
             filter: drop-shadow(0 0 0.5rem var(--colorLogo));
           }
-
           .logo {
             max-width: 100%;
             max-height: 30%;
@@ -40,6 +41,7 @@
           }
         }
         h2 {
+          width: var(--sliderWidth);
           background-color: var(--colorLogo);
           align-self: center;
           justify-self: center;
@@ -78,9 +80,12 @@
             grid-area: 2/2/3/3;
           }
           article {
+            align-self: start;
+
             grid-area: 3/2/4/3;
           }
           div {
+            max-width: 100%;
             grid-area: 2/1/4/2;
           }
         }
@@ -96,7 +101,11 @@
           <li class="navElement"><a href="index.html">O Nas</a></li>
           <li class="navElement"><a href="./oferta.html">Oferta</a></li>
           <li class="navElement">
-            <a href="./galeria.html">Galeria</a>
+            <a
+              href="https://fotografia-ewa-i-tomasz-cybula.photonesto.com"
+              target="_blank"
+              >Galeria</a
+            >
           </li>
 
           <li class="navElement"><a href="./kontakt.html">Kontakt</a></li>
@@ -114,48 +123,27 @@
         <img class="logo" src="./media/LOGOAbout.png" alt="" />
       </div>
 
-      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+      <h2>Witaj w Fotografia Cybula!</h2>
       <article>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-          laboriosam eligendi soluta consequatur omnis pariatur quia velit
-          praesentium voluptatem temporibus fugit, quibusdam ducimus, minima
-          rem, in illo mollitia voluptate ut?
+          Jesteśmy parą pasjonatów, dla których fotografia to nie tylko zawód,
+          ale przede wszystkim sposób na uwiecznienie najpiękniejszych chwil
+          życia.
         </p>
         <p>
-          Incidunt quis fugit nostrum ut quam praesentium laudantium
-          exercitationem officia soluta omnis quas a, eum, labore facilis
-          quaerat. Consequuntur esse nostrum saepe assumenda aliquam
-          perspiciatis doloribus nam excepturi ipsam repellat.
+          Z nami każda rodzinna historia nabiera wyjątkowego blasku, a
+          wspomnienia stają się nieśmiertelne. Zaufaj nam, a razem stworzymy
+          piękne i naturalne fotografie, które będą cieszyć Twoje oczy przez
+          lata.
         </p>
         <p>
-          Dolor, incidunt aut! Omnis excepturi dolorem harum deserunt, ducimus
-          possimus adipisci. Laborum ex magnam, temporibus autem dolores
-          quisquam labore totam, voluptas fugit earum numquam illo ipsum
-          nostrum, dolorum sequi fugiat?
+          Twoja rodzina zasługuje na to, by być uwieczniona w najpiękniejszy
+          sposób – zapraszamy do współpracy!
         </p>
       </article>
     </main>
     <footer>
       <ul>
-        <li>
-          <a href="index.html"
-            ><img src="./media/home-page.png" alt="" />O Nas</a
-          >
-        </li>
-        <li>
-          <a href="./oferta.html"
-            ><img src="logoHeaderMini.png" alt="" />Oferta</a
-          >
-        </li>
-
-        <li>
-          <a href="./kontakt.html"
-            ><img class="round" src="./media/phoneBlack.png" alt="" />
-            Kontakt</a
-          >
-        </li>
-
         <li>
           <a href="https://www.facebook.com/fotografia.cybula"
             ><img
@@ -166,7 +154,8 @@
           >
         </li>
         <li>
-          <a href=""
+          <a
+            href="https://www.instagram.com/fotografia.cybula?igsh=eTMwMm14eTF4aTFk"
             ><img
               class="round"
               src="./media/instagramBlack.png"

@@ -1,8 +1,5 @@
 const mainContent = document.querySelector("main");
-console.log(mainContent.children);
-[...mainContent.children].forEach((element) => {
-  console.log(element);
-});
+
 const observer = new IntersectionObserver((entry) => {
   entry.forEach((entry) => {
     if (entry.isIntersecting) {

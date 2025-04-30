@@ -5,9 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OFERTA</title>
-    <style></style>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./media/fav2.png" type="image/x-icon" />
+
     <style>
+      .entry {
+        width: var(--sliderWidth);
+
+        align-self: center;
+        justify-self: center;
+        background-color: var(--colorMilk);
+        text-align: center;
+        margin: 10px 0;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        padding: 0.3rem 0.5em;
+        * {
+          font-size: var(--fontSizeS);
+        }
+        p {
+          padding: 0.3rem 0.5em;
+        }
+      }
       section {
         display: flex;
         flex-direction: column;
@@ -87,26 +106,14 @@
           font-weight: bold;
         }
       }
-      footer {
-        ul {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-          grid-auto-rows: 1fr;
-          li {
-            width: 100%;
-            a,
-            button > * {
-              width: 100%;
-              background-color: var(--colorLogo);
-              color: var(--colorMilk);
-            }
-          }
-        }
-      }
+
       @media (width > 1400px) {
         main {
           width: 1400px;
           margin: 0 auto;
+        }
+        .entry {
+          width: 100%;
         }
         section {
           position: relative;
@@ -143,9 +150,12 @@
           <li class="navElement"><a href="index.html">O Nas</a></li>
           <li class="navElement"><a href="./oferta.html">Oferta</a></li>
           <li class="navElement">
-            <a href="./galeria.html">Galeria</a>
+            <a
+              href="https://fotografia-ewa-i-tomasz-cybula.photonesto.com"
+              target="_blank"
+              >Galeria</a
+            >
           </li>
-
           <li class="navElement"><a href="./kontakt.html">Kontakt</a></li>
         </ul>
       </nav>
@@ -153,6 +163,23 @@
     </header>
     <main>
       <h1>Oferta</h1>
+
+      <article class="entry">
+        <h2>
+          W Fotografia Cybula oferujemy szeroki zakres usług, by każdy ważny
+          moment w Twoim życiu został uwieczniony z troską i pasją. Od reportaży
+          ślubnych, przez sesje rodzinne, aż po uroczyste wydarzenia takie jak
+          chrzciny, komunie czy urodziny.
+        </h2>
+        <p>
+          Dodatkowo wykonujemy sesje narzeczeńskie, biznesowe, ciążowe, rodzinne
+          i inne, abyś mógł podzielić się swoimi najważniejszymi chwilami z
+          bliskimi. I jeśli chcesz, by Twoje wspomnienia miały też ruch i
+          dźwięk, chętnie zadbamy o profesjonalny film. Z nami każdy moment
+          nabierze wyjątkowego charakteru!
+        </p>
+      </article>
+
       <section>
         <div class="slider">
           <ul class="imgList">
@@ -196,17 +223,19 @@
           <button class="btn pre">«</button>
           <button class="btn next">»</button>
         </div>
-        <h2 class="OferName">reportaże ślubne</h2>
+        <h2 class="OferName">Fotoreportaże ślubne</h2>
 
         <article class="visibleText">
           <p>
-            oferujemy różne pakiety związane z fotografia ślubna. zadzwoń lub
-            napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
+            Twój ślub to jedna z najważniejszych chwil w życiu. Pozwól nam
+            uwiecznić te emocje, uśmiechy i wzruszenia w naturalnych, pełnych
+            ciepła fotografiach.
           </p>
           <p>
-            zadzwoń lub napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
+            Nasze reportaże ślubne to nie tylko zdjęcia, to opowieść o Waszej
+            miłości, do której będziecie mogli wracać jeszcze wiele lat. Z
+            troską i dyskrecją towarzyszymy Wam przez cały dzień, aby nic nie
+            umknęło naszej uwadze.
           </p>
         </article>
       </section>
@@ -253,17 +282,17 @@
           <button class="btn pre">«</button>
           <button class="btn next">»</button>
         </div>
-        <h2 class="OferName">reportaże ślubne</h2>
+        <h2 class="OferName">Urodziny i eventy</h2>
 
         <article class="visibleText">
           <p>
-            oferujemy różne pakiety związane z fotografia ślubna. zadzwoń lub
-            napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
+            Każde urodziny, jubileusze czy wydarzenia firmowe to okazja do
+            świętowania i tworzenia wspomnień. Z nami każda impreza nabierze
+            jeszcze bardziej wyjątkowego charakteru.
           </p>
           <p>
-            zadzwoń lub napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
+            Zadbamy o to, by uchwycić najważniejsze momenty, śmiech i emocje,
+            które będą cieszyć Wasze oczy przez lata.
           </p>
         </article>
       </section>
@@ -310,17 +339,17 @@
           <button class="btn pre">«</button>
           <button class="btn next">»</button>
         </div>
-        <h2 class="OferName">reportaże ślubne</h2>
+        <h2 class="OferName">Sesje rodzinne</h2>
 
         <article class="visibleText">
           <p>
-            oferujemy różne pakiety związane z fotografia ślubna. zadzwoń lub
-            napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
+            Rodzinne chwile są bezcenne. Zapraszamy na sesje, które pomogą Wam
+            zatrzymać na zdjęciach Waszą miłość, radość i bliskość.
           </p>
           <p>
-            zadzwoń lub napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
+            Naturalne, ciepłe fotografie, pełne spontanicznych uśmiechów i
+            wzruszeń – to nasza specjalność. Stwórzmy razem piękną pamiątkę dla
+            Was i przyszłych pokoleń.
           </p>
         </article>
       </section>
@@ -367,17 +396,17 @@
           <button class="btn pre">«</button>
           <button class="btn next">»</button>
         </div>
-        <h2 class="OferName">reportaże ślubne</h2>
+        <h2 class="OferName">Sesje ślubne i narzeczeńskie</h2>
 
         <article class="visibleText">
           <p>
-            oferujemy różne pakiety związane z fotografia ślubna. zadzwoń lub
-            napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
+            Twój ślub i zaręczyny to magiczny czas, który warto uwiecznić w
+            romantycznych i naturalnych fotografiach. Zapraszamy na sesje, które
+            oddadzą Waszą miłość i wyjątkową atmosferę tego dnia.
           </p>
           <p>
-            zadzwoń lub napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
+            Bez sztampy, za to z dużą dawką serdeczności i indywidualnego
+            podejścia.
           </p>
         </article>
       </section>
@@ -424,131 +453,16 @@
           <button class="btn pre">«</button>
           <button class="btn next">»</button>
         </div>
-        <h2 class="OferName">reportaże ślubne</h2>
+        <h2 class="OferName">Sesje biznesowe</h2>
 
         <article class="visibleText">
           <p>
-            oferujemy różne pakiety związane z fotografia ślubna. zadzwoń lub
-            napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
+            Profesjonalne zdjęcia to podstawa w świecie biznesu. Oferujemy
+            sesje, które podkreślą Twoją wiarygodność i profesjonalizm.
           </p>
           <p>
-            zadzwoń lub napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
-          </p>
-        </article>
-      </section>
-      <section>
-        <div class="slider">
-          <ul class="imgList">
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/e/1/b/e1b28130-0f4a-48d0-a87c-82ee77ab7e2a_large/sunrise-city-run-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/2/3/2/232d6135-85c0-4977-9113-2114eefc1052_large/autumn-reflective-symmetry-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/8/0/8/808e600b-0992-4b36-b2c2-b512b637c4ae_large/vintage-classroom-scene-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/5/a/c/5ac515a7-8eed-4f20-b2e2-5b9ae24feaaf_large/family-gardening-together-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/2/5/9/2593ce11-cf66-46be-b739-8999424c276e_large/coastal-european-town-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/5/6/a/56ad16ee-0ae0-4865-bf9e-758925d9a97d_large/sunset-cityscape-view-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-          </ul>
-          <button class="btn pre">«</button>
-          <button class="btn next">»</button>
-        </div>
-        <h2 class="OferName">reportaże ślubne</h2>
-
-        <article class="visibleText">
-          <p>
-            oferujemy różne pakiety związane z fotografia ślubna. zadzwoń lub
-            napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
-          </p>
-          <p>
-            zadzwoń lub napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
-          </p>
-        </article>
-      </section>
-      <section>
-        <div class="slider">
-          <ul class="imgList">
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/e/1/b/e1b28130-0f4a-48d0-a87c-82ee77ab7e2a_large/sunrise-city-run-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/2/3/2/232d6135-85c0-4977-9113-2114eefc1052_large/autumn-reflective-symmetry-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/8/0/8/808e600b-0992-4b36-b2c2-b512b637c4ae_large/vintage-classroom-scene-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/5/a/c/5ac515a7-8eed-4f20-b2e2-5b9ae24feaaf_large/family-gardening-together-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/2/5/9/2593ce11-cf66-46be-b739-8999424c276e_large/coastal-european-town-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-            <li class="imgListElement">
-              <img
-                src="https://images.stockcake.com/public/5/6/a/56ad16ee-0ae0-4865-bf9e-758925d9a97d_large/sunset-cityscape-view-stockcake.jpg"
-                alt="image"
-              />
-            </li>
-          </ul>
-          <button class="btn pre">«</button>
-          <button class="btn next">»</button>
-        </div>
-        <h2 class="OferName">reportaże ślubne</h2>
-
-        <article class="visibleText">
-          <p>
-            oferujemy różne pakiety związane z fotografia ślubna. zadzwoń lub
-            napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
-          </p>
-          <p>
-            zadzwoń lub napisz do nas by poznać szczegóły uwiecznienia waszych
-            najpiękniejszych chwil
+            Naturalne portrety, zdjęcia do materiałów marketingowych czy na
+            stronę internetową – razem stworzymy wizerunek, który przyciąga.
           </p>
         </article>
       </section>
@@ -556,21 +470,23 @@
     <footer>
       <ul>
         <li>
-          <a href="index.html">O Nas</a>
+          <a href="https://www.facebook.com/fotografia.cybula"
+            ><img
+              class="round"
+              src="./media/facebookBlack1.png"
+              alt=""
+            />Facebook</a
+          >
         </li>
         <li>
-          <a href="./oferta.html">Oferta</a>
-        </li>
-
-        <li>
-          <a href="./kontakt.html"> Kontakt</a>
-        </li>
-
-        <li>
-          <a href="">Facebook</a>
-        </li>
-        <li>
-          <a href="">Instagram</a>
+          <a
+            href="https://www.instagram.com/fotografia.cybula?igsh=eTMwMm14eTF4aTFk"
+            ><img
+              class="round"
+              src="./media/instagramBlack.png"
+              alt=""
+            />Instagram</a
+          >
         </li>
       </ul>
     </footer>

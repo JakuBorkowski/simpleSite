@@ -124,6 +124,7 @@ footer {
   padding: 0.5rem;
   width: 100%;
   background-color: var(--colorLogo);
+  min-height: 2rem;
   ul {
     display: flex;
     justify-content: space-around;
